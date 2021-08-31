@@ -6,6 +6,31 @@
 #include <vector>
 #include <cmath>
 
+std::string operator+(const std::string st1, const std::string st2)
+{
+    return sumstri(st1.c_str(), st2.c_str());
+}
+
+std::string operator-(const std::string st1, const std::string st2)
+{
+    return minstri(st1.c_str(), st2.c_str());
+}
+
+std::string operator*(const std::string st1, const std::string st2)
+{
+    return multistri(st1.c_str(), st2.c_str());
+}
+
+std::string operator/(const std::string st1, const std::string st2)
+{
+    return divitstri(st1.c_str(), st2.c_str());
+}
+
+std::string operator%(const std::string st1, const std::string st2)
+{
+    return modestri(st1.c_str(), st2.c_str());
+}
+
 namespace Calculator{
 
     // Check
