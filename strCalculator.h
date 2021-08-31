@@ -10,5 +10,10 @@ std::string minstri(const char*, const char*);   // n digits - n digits
 std::string multistri(const char*, const char*); // n digits * n digits
 std::string divitstri(const char*, const char*); // n digits / 9 digits
 std::string modestri(const char* , const char*); // n digits % 9 digits
+std::string operator+(const std::string st1, const std::string st2)
+std::string operator-(const std::string st1, const std::string st2)
+std::string operator*(const std::string st1, const std::string st2)
+std::string operator/(const std::string st1, const std::string st2)
+std::string operator%(const std::string st1, const std::string st2)
 
 #endif
