@@ -15,19 +15,22 @@ int main()
 
     string a1 = "-999912399134213421121341344343434991349";
     string a2 = "999999913499";
-    const char* st = "13400200134"; // n digits
-    const char* st2 = "123"; // 9 digits
+    
+    string st1 = "13400200134"; // n digits
+    string st2 = "123"; // 9 digits
 
-    string a3 = sumstri(a1.c_str(),a2.c_str());
-    string a4 = minstri(a1.c_str(),a2.c_str());
-    string a5 = multistri(a1.c_str(),a2.c_str());
+    string a3 = a1+a2;
+    string a4 = a1-a2;
+    string a5 = a1*a2;
+    string st3 = st1/st2;
+    string st4 = st1%st2;
     
     cout << "\nstr1: " << a1 << "\nstr2: " << a2
          << "\n\nsum: " << a3 << "\nsub: " << a4 << "\nmulty: " << a5 
          << "\n\n-----------------------------" 
-         << "\nstr1: " << st << "\nstr2: " << st2
-         << "\n\ndivit: " << divitstri(st, st2) 
-         << "\nmode: " << modestri(st,st2) 
+         << "\nstr1: " << st1 << "\nstr2: " << st2
+         << "\n\ndivit: " << st3 
+         << "\nmode: " << st4
          << "\n-----------------------------\n\n";
   
 
